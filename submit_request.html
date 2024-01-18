@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Request</title>
+    <link rel="stylesheet" href="patient_login.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+       
+      
+        
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><img src="/SRSScreenShorts/Fig56._Patient_site_1-removebg-preview.png" style="width: 15vh;"></a>
+            </li>
+            
+          </ul>
+          <button class="bg-white rounded me-2 border border-info" onclick="toggle()"><img src="/SRSScreenShorts/moon.svg"></button>
+        
+      </nav>
+
+
+     <div class="container-fluid bg-light">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-6 col-xl-4 col-md-8 bg-light" style="width: 60vh;">
+
+          <div class="heading d-flex justify-content-between align-items-center mt-3">
+            <p class="fs-3 fw-bold iam text-black">I am a </p>
+            <button class="bg-white border rounded py-2 border-info "><a href="#" class="text-decoration-none p-3 fw-bold back-btn"><strong>&lt;</strong> Back</a></button>
+          </div>
+          <div class="btns">
+            <button class="p-2 login-btn3 mt-5 pt-2 border rounded btn1"><p class="fs-5">Patients</p></button>
+            <button class="p-2 login-btn3 mt-5 pt-2 border rounded btn2"><p class="fs-5">Family/Friends</p></button>
+            <button class="p-2 login-btn3 mt-5 pt-2 border rounded btn3"><p class="fs-5">Concierge</p></button>
+            
+            <button class="p-2 login-btn3 mt-5 pt-2 border rounded btn4"><p class="fs-5">Business Partners</p></button>
+          </div>
+        </div>
+
+      </div>
+      <footer>
+      <div class="foot bg-dark w-100">
+        <p class="fs-7 mx-5 text-grey">Terms of Condition <span class="vr"></span> Privacy Policy</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let light=1;
+    let show=0;
+    function toggle(){
+        console.log("js added")
+        if(light==1){
+          document.querySelectorAll(".bg-light").forEach(element => {
+            element.classList.add('bg-dark');
+            element.classList.remove('bg-light');
+            console.log(element)
+          });
+          
+          document.querySelectorAll(".border-info").forEach(element => {
+            element.classList.add('border-white');
+            element.classList.remove('border-info');
+            console.log(element)
+          });
+          document.querySelectorAll(".text-black").forEach(element => {
+            element.classList.add('text-white');
+            element.classList.remove('text-black');
+            console.log(element)
+          });
+          document.querySelectorAll(".bg-white").forEach(element => {
+            element.classList.add('bg-dark');
+            element.classList.remove('bg-white');
+            console.log(element)
+          });
+            light=0;
+        }
+        else{
+          document.querySelectorAll(".bg-dark").forEach(element => {
+            element.classList.add('bg-light');
+            element.classList.remove('bg-dark');
+            console.log(element)
+          });
+          document.querySelectorAll(".border-white").forEach(element => {
+            element.classList.add('border-info');
+            element.classList.remove('border-white');
+            console.log(element)
+          });
+          document.querySelectorAll(".text-white").forEach(element => {
+            element.classList.add('text-black');
+            element.classList.remove('text-white');
+            console.log(element)
+          });
+          document.querySelectorAll(".bg-dark").forEach(element => {
+            element.classList.add('bg-white');
+            element.classList.remove('bg-dark');
+            console.log(element)
+          });
+
+            light=1;
+        }
+    }
+    </script>
+</body>
+</html>

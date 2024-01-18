@@ -55,11 +55,28 @@
    text-align: center;
 }
 .person-icon{
-    /* background-color: white; */
-    /* min-height: 15px; */
     padding-top: 3px;
     z-index: 1;
     position: absolute;
     top: 15px;
     right: 12px;
+}
+
+@media screen and (max-width:980px){
+    .main-container::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%        ;
+        z-index: -1;
+        opacity: 0.2;
+        background: url('/SRS Screen Shorts/login_image.jpg');
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+       
+    }
+.left-col{
+    display: none;
+}
+
 }
