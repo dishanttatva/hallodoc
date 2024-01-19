@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Request</title>
+    <link rel="stylesheet" href="../../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/familyfriend_request.css">
+    <script src="../JS/toggle.js"></script>
+    <script src="../../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/modal.js"></script>
+</head>
+
+<body class="bg-light" data-bs-theme="light" onload="modal()">
+    <button type="button" class="btn btn-primary d-none" id="modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            
+            <div class="modal-body d-flex justify-content-center flex-column align-items-center m-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" fill="currentColor" class="border border-3 shadow rounded-circle border-warning p-1 bi text-warning my-4 bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+                  </svg>
+               <p class="text-center"> When submitting a request, you must provide the correct contact information for the patient or the responsible party. Failure to provide the correct email and phone number will delay service or be declined.</p>
+               <div class=" d-flex justify-content-center">
+                 
+                 <button type="button" data-bs-dismiss="modal" class="btn btn-primary">Ok</button>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+
+
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><img src="../../SRSScreenShorts/Fig56._Patient_site_1-removebg-preview.png"
+                        style="width: 15vh;"></a>
+            </li>
+
+        </ul>
+        <button class=" rounded me-2  border border-info" onclick="toggle()"><img
+                src="../../SRSScreenShorts/moon.svg"></button>
+
+    </nav>
+
+
+
+    <div class="container-fluid mt-3 ">
+        <div class="row my-3 d-flex justify-content-center">
+
+            <div class=" col-lg-8 col-md-10 ">
+                <div class="d-flex justify-content-end mt-3">
+                    <button onclick="location.href='submit_request.html'" class="bg-white border rounded py-2 border-info"><a href="#"
+                            class=" text-decoration-none p-3 fw-bold back-btn"><strong>&lt;</strong> Back</a></button>
+                </div>
+                <form>
+                <div class=" bg-white form-div mt-3 shadow-lg p-2 container-fluid">
+                    <h3 class="pb-2">Family/Friend Information</h3>
+                    
+
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Your First Name</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Your Last Name</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 ">
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">+91</label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 ">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Your Email</label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 ">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Relation with Patient</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <h3 class="mt-5 pb-2">Patient Information</h3>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Enter brief details of symptoms (optional)</label>
+                    </div>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">First Name</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Last Name</label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="date" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Date of Birth</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h3 class="mt-5 pb-2">Patient Contact Information</h3>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">+91</label>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+
+                    <h3 class="mt-5 pb-2">Patient Location</h3>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Street</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">City</label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">State</label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Zipcode</label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Room/ # Suite (optinal)</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <h3 class="mt-5 pb-2">Optional Upload Photo or Document</h3>
+                    <div>
+                        <label for="fileinput" class="selectfile rounded d-flex justify-content-between">
+                                <p class="m-2">Select File</p>
+                                <input type="file" id="fileinput" style="display: none;">
+                                <div class="upload-btn p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-up" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M7.646 5.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708z"/>
+                                        <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                      </svg>
+                                    Upload
+                                </div>
+                        </label>
+                    </div>
+
+                    <div class="btns  d-flex justify-content-end my-3">
+                        <button class="btn btn-submit">Submit</button>
+                        <button class="btn btn-cancel mx-2">Cancel</button>
+
+                    </div>
+            </div>
+        </form>
+        </div>
+    </div>
+
+
+
+
+    <div class="foot w-100 d-flex align-items-center justify-content-end " id="foot">
+        <p class="fs-7 mx-5 text-grey mt-12px">Terms of Condition <span class="vr"></span> Privacy Policy</p>
+    </div>
+
+
+
+
+    
+</body>
+
+</html>

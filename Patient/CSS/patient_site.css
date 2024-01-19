@@ -1,0 +1,189 @@
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.login_image {
+    width: 100%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-floating {
+    width: 80%;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #00BDE7 !important;
+}
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label {
+    color: aqua !important;
+}
+
+.login-btn {
+    background-color: #00BDE7;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #00BDE7;
+}
+
+.login-btn>a {
+    text-decoration: none;
+    color: white;
+}
+
+.forgot-link {
+    text-decoration: none;
+
+    color: #00BDE7;
+}
+
+.col-lg-6 {
+    min-height: 100%;
+}
+
+.foot {
+    text-align: center;
+}
+
+.person-icon {
+    padding-top: 3px;
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    right: 12px;
+}
+
+.darkimage {
+    position: absolute;
+    right: 0;
+}
+
+.main-col::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('/SRSScreenShorts/login_image.jpg');
+    background-size: 30vw 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.login-btn {
+    background-color: #00BDE7;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #00BDE7;
+}
+
+.login-btn2 {
+    background-color: #030376;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #030376;
+}
+
+.login-btn>a {
+    text-decoration: none;
+    color: white;
+}
+
+.login-btn2>a {
+    text-decoration: none;
+    color: white;
+}
+
+.back-btn {
+    color: #00bde7;
+
+}
+
+.login-btn3 {
+    background-color: #00BDE7;
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #00BDE7;
+}
+
+.btn1 {
+    color: #5c33c4;
+    font-weight: bold;
+    background-color: #ddd4f2;
+    border-color: #9789ba;
+    text-align: start;
+}
+
+.btn2 {
+    font-weight: bold;
+    color: #08BCEB;
+    text-align: start;
+    background-color: #cde4eb;
+    border-color: #7bcade;
+}
+
+.foot {
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 50px;
+    position: fixed;
+    color: white;
+    text-align: end;
+    padding-top: 7px;
+    bottom: 2px;
+}
+
+.btn3 {
+    font-weight: bold;
+    color: #276325;
+    background-color: #cae9c9;
+    border-color: #95cc93;
+    text-align: start;
+}
+
+.btn4 {
+    font-weight: bold;
+    color: #77127a;
+    background-color: #f6d8f7;
+    border-color: #bf7fc1;
+    text-align: start;
+}
+
+.iam {
+    margin-left: 55px;
+}
+
+.navbar {
+    box-shadow: 0px 2px 2px grey;
+}
+
+@media screen and (max-width:1900px) {
+    .main-col::before {
+        background-size: 60vw 100%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .main-col::before {
+        background-size: 70vw 100%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .main-col::before {
+        background-size: 100vw 100%;
+    }
+}

@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit Screen</title>
-    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="patient_login.css">
+    <link rel="stylesheet" href="../../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/patient_site.css">
+    <script src="../JS/toggle2.js"></script>
 </head>
 
 <body>
@@ -23,10 +24,10 @@
                         <img src="/SRSScreenShorts/Fig56._Patient_site_1-removebg-preview.png">
                     </div>
                     <div class="btns d-flex justify-content-center align-items-center flex-column mt-5">
-                        <button class="login-btn rounded "><a href="#">
+                        <button onclick="location.href='submit_request.html'" class="login-btn rounded "><a href="#">
                                 <p class="fs-4 pt-1">Submit a Request</p>
                             </a></button>
-                        <button class="login-btn2 rounded  mt-3"><a href="#">
+                        <button onclick="location.href='patient_login_page.html'" class="login-btn2 rounded  mt-3"><a href="#">
                                 <p class="fs-4 pt-1">Registered Patients</p>
                             </a></button>
                     </div>
@@ -41,26 +42,7 @@
             <div class="col-lg-4 col-md-3 bg-danger"></div>
         </div>
     </div>
-    <script>
-        let light = 1;
-        let show = 0;
-        function toggle() {
-            console.log("js added")
-            if (light == 1) {
-
-                document.body.style.backgroundColor = "black";
-
-                light = 0;
-            }
-            else {
-
-                document.body.style.backgroundColor = "white";
-
-
-                light = 1;
-            }
-        }
-    </script>
+    
 </body>
 
 </html>

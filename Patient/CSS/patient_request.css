@@ -1,0 +1,45 @@
+.foot{
+    color: white;
+    text-align: end;
+    position: relative;
+    bottom: 0;
+    height: 6vh;
+    border-top: 1px solid white;
+    background-color: black;
+}
+.navbar{
+    box-shadow: 0px 2px 2px grey;
+   
+}
+.back-btn{
+    color: #00bde7;
+}
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label
+{
+    color: #00bde7;
+}
+.selectfile{
+    margin-right: 2px;
+    width: 100%;
+    border: 1px solid black;
+}
+.upload-btn{
+    background-color: #00bde7;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+.btn-submit{
+    background-color: #00bde7;
+    color: white;
+    font-weight: bold;
+}
+.btn-cancel{
+    border: 1px solid #00bde7;
+    background-color: white;
+    color: #00bde7;
+}
+.form-control:focus{
+    box-shadow: none;
+    border-color: #00BDE7 !important;
+}

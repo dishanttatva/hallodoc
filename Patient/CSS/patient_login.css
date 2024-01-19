@@ -80,36 +80,43 @@
     background-position: center;
 
 }
-.login-btn{
+
+.login-btn {
     background-color: #00BDE7;
     width: 80%;
     padding: 5px;
     border: 1px solid #00BDE7;
 }
-.login-btn2{
+
+.login-btn2 {
     background-color: #030376;
-    width: 80%; 
+    width: 80%;
     padding: 5px;
     border: 1px solid #030376;
 }
-.login-btn>a{
+
+.login-btn>a {
     text-decoration: none;
     color: white;
 }
-.login-btn2>a{
+
+.login-btn2>a {
     text-decoration: none;
     color: white;
 }
-.back-btn{
+
+.back-btn {
     color: #00bde7;
 
 }
-.login-btn3{
+
+.login-btn3 {
     background-color: #00BDE7;
     width: 50%;
     padding: 5px;
     border: 1px solid #00BDE7;
 }
+
 .btn1 {
     color: #5c33c4;
     font-weight: bold;
@@ -117,6 +124,7 @@
     border-color: #9789ba;
     text-align: start;
 }
+
 .btn2 {
     font-weight: bold;
     color: #08BCEB;
@@ -124,7 +132,8 @@
     background-color: #cde4eb;
     border-color: #7bcade;
 }
-.foot{
+
+.foot {
     color: grey;
     display: flex;
     align-items: center;
@@ -136,6 +145,7 @@
     padding-top: 7px;
     bottom: 2px;
 }
+
 .btn3 {
     font-weight: bold;
     color: #276325;
@@ -151,12 +161,15 @@
     border-color: #bf7fc1;
     text-align: start;
 }
-.iam{
-    margin-left:55px;
+
+.iam {
+    margin-left: 55px;
 }
-.navbar{
+
+.navbar {
     box-shadow: 0px 2px 2px grey;
 }
+
 @media screen and (max-width:1900px) {
     .main-col::before {
         background-size: 60vw 100%;
